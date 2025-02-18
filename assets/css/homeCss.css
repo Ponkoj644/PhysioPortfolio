@@ -1,7 +1,100 @@
 /* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* variabls */
+:root {
+  --textPrimary: rgb(21, 60, 51);
+  --textSecondary: rgb(97, 158, 144);
+  --textWhite: #ffffff;
+  --bgPrimary: rgb(21, 60, 51);
+  --bgSecondary: rgb(97, 158, 144);
+  --transition300: all 0.3s ease-in-out;
+}
+
+body {
+  font-family: "Archivo", serif;
+}
 
 /* common style */
 
+a {
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
 /* custom class */
+.btn_default {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1em;
+  color: var(--textWhite);
+  background: var(--bgSecondary);
+  text-transform: capitalize;
+  padding: 18px 55px 18px 20px;
+  border-radius: 99px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.btn_default::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: var(--bgPrimary);
+  /* background-image: url(../images/icon-phone.svg); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+  transform: translate(-10px, -50%);
+  transition: all 0.3s ease-in-out;
+}
+.btn_default::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  border-radius: 99px;
+  background: var(--bgPrimary);
+  transition: all 0.4s ease-in-out;
+  z-index: -1;
+}
+.btn_default:hover::before {
+  background-color: var(--bgSecondary);
+  transition: all 0.4s ease-in-out;
+}
+.btn_default:hover::after {
+  width: 100%;
+}
+
+.header_btn::before {
+  background-image: url(../images/icon-phone.svg);
+}
+
+/* header css */
+
+.my_navbar {
+  background-color: #ffffff;
+}
+
+.my_navbar .nav-link {
+  font-weight: 500;
+  line-height: 1.688rem;
+  color: var(--textPrimary);
+  transition: var(--transition300);
+}
+
+.my_navbar .nav-link:hover {
+  color: var(--textSecondary);
+}
