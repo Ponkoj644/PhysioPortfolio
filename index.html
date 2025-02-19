@@ -20,9 +20,7 @@
     <!-- header start -->
     <header>
       <!-- navbar -->
-      <nav
-        class="navbar navbar-expand-lg py-2 py-lg-4 shadow-sm my_navbar"
-      >
+      <nav class="navbar navbar-expand-lg py-2 py-lg-4 shadow-sm my_navbar">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="./assets/images/logo.svg" alt="logo" />
@@ -90,8 +88,10 @@
               </li>
             </ul>
 
-            <div class="d-inline-flex">
-              <a href="#" class="btn_default header_btn">+(880) 1833-044436</a>
+            <div class="d-none d-xl-block d-xl-block">
+              <a href="#" class="btn_default header_btn d-inline-flex"
+                >+(880) 1833-044436</a
+              >
             </div>
           </div>
         </div>
@@ -101,6 +101,116 @@
 
     <!-- main start -->
     <main>
+      <!-- hero start -->
+      <section class="hero_area">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="hero_content me-0 me-lg-5">
+                <div class="section_title">
+                  <h1><span>Destination</span> For Relief & Wellness</h1>
+                  <p>
+                    It is a long established fact that a reader will be
+                    distracted the readable content of a page when looking at
+                    layout the point of using lorem the Ipsum less normal
+                    distribution of letters.
+                  </p>
+                </div>
+                <div class="hero_btn d-flex align-items-center gap-3">
+                  <a class="btn_default" href="">Explore Services</a>
+                  <a class="btn_default btn_highlighted" href=""
+                    >Book Appointment</a
+                  >
+                </div>
+                <hr />
+                <div
+                  class="hero_counter d-flex align-items-center justify-content-lg-between"
+                >
+                  <div>
+                    <h2><span class="counter">24</span>/7</h2>
+                    <p>Emergency Care</p>
+                  </div>
+                  <div>
+                    <h2><span class="counter">80</span>+</h2>
+                    <p>Doctors</p>
+                  </div>
+                  <div>
+                    <h2><span class="counter">100</span>k+</h2>
+                    <p>Customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="hero_img">
+                <img src="./assets/images/hero-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="hero_bottom wow slideInLeft"
+        data-wow-duration="2s"
+        data-wow-delay="5s"
+      >
+        <div class="container-fluid">
+          <div class="row gap-2 gap-md-0">
+            <div class="col-lg-4 col-md-6">
+              <div
+                class="hero_bottom_content d-flex align-items-start gap-3 mb-md-2"
+              >
+                <div class="icon_box">
+                  <img src="./assets/images/hero_expart.svg" alt="Therapists" />
+                </div>
+
+                <div class="hero_bottom_text">
+                  <h2>expert therapists</h2>
+                  <p>Our team of licensed and certified physiotherapists</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="hero_bottom_content d-flex align-items-start gap-3">
+                <div class="icon_box">
+                  <img
+                    src="./assets/images/hero_emmergency.svg"
+                    alt="Therapists"
+                  />
+                </div>
+
+                <div class="hero_bottom_text">
+                  <h2>emergency service</h2>
+                  <p>Our team of licensed and certified physiotherapists</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="hero_bottom_content d-flex align-items-start gap-3">
+                <div class="icon_box">
+                  <img
+                    src="./assets/images/hero_free_consultant.svg"
+                    alt="Therapists"
+                  />
+                </div>
+
+                <div class="hero_bottom_text">
+                  <h2>free consultant</h2>
+                  <p>
+                    Our mission is to enhance the quality of life of our
+                    patients
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hero end -->
       <div>main</div>
     </main>
 
@@ -117,5 +227,16 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+    <!-- <script>
+      $(".counter").counterUp({
+        delay: 50,
+        time: 5000,
+      });
+    </script> -->
   </body>
 </html>
