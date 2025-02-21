@@ -409,3 +409,9 @@ svg {
 .appointment_btn {
   width: 50%;
 }
+
+/* gallery carousel start */
+.gallery-carousel {
+  padding: 3.125rem 0;
+}
+/* gallery carousel end */
