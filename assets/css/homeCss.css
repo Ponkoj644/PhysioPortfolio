@@ -11,8 +11,10 @@
   --bgPrimary: rgb(21, 60, 51);
   --bgSecondary: rgb(97, 158, 144);
   --bgTertiary: #e6efed;
-  --transition300: all 0.3s ease-in-out;
+
   --darkDividerColor: #153c331a;
+
+  --transition300: all 0.3s ease-in-out;
 }
 
 body {
@@ -411,7 +413,7 @@ svg {
 }
 
 /* gallery carousel start */
-.gallery-carousel {
+.gallery_carousel {
   padding: 3.125rem 0;
 }
 
@@ -468,7 +470,7 @@ svg {
   position: absolute;
   content: "";
   top: 0;
-  left: -200%;
+  left: -150%;
   z-index: 2;
   display: block;
   width: 50%;
@@ -486,3 +488,90 @@ svg {
   transform: skew(-45deg);
 }
 /* gallery carousel end */
+
+/* service start */
+.our_services {
+  padding: 3.125rem 0 4.375rem;
+}
+
+.section_row {
+  margin-bottom: 3.75rem;
+}
+
+.section_btn {
+  text-align: end;
+}
+
+/* service item */
+.service_item {
+  border: 1px solid var(--darkDividerColor);
+  border-radius: 1.875rem;
+  height: calc(100% - 1.875rem);
+  margin-bottom: 1.875rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.service_item::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-radius: 0px;
+  background-color: var(--bgSecondary);
+  transition: all 0.4s ease-in-out;
+  height: 100%;
+  z-index: -1;
+}
+
+.service_item .icon_box {
+  width: 3.25rem;
+  height: 3.25rem;
+  background-color: var(--bgTertiary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.service_item .icon_box::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  top: 100%;
+  border-radius: 0px;
+  background-color: var(--bg-white);
+}
+
+.service_item .icon_box img {
+  position: relative;
+  max-width: 1.875rem;
+  z-index: 1;
+}
+
+.service_item .service_body {
+  margin-bottom: 1.25rem;
+}
+.service_item .service_body h3{
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 1.25rem;
+  color: var(--textPrimary);
+  
+}
+.service_item .service_body p{
+  margin: 0;
+  line-height: 1.7rem;
+  color: black;
+  opacity: .6;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/* service end */
