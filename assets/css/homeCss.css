@@ -103,7 +103,7 @@ a {
 
 .section_title h1,
 .section_title h2 {
-  font-size: clamp(2rem, 1.5357rem + 2.3214vw, 3.625rem);
+  font-size: clamp(1.5625rem, 1.0446rem + 2.5893vw, 3.375rem);
   /* line-height: 4rem; */
   font-weight: 700;
   color: var(--textPrimary);
@@ -354,8 +354,10 @@ svg {
 /* about us footer */
 .about_us_footer {
 }
-
+/* d-flex align-items-center justify-content-between */
 .doctor_info {
+  display: flex;
+  justify-content: space-between;
 }
 
 .doctor_info_item {
@@ -406,6 +408,19 @@ svg {
 
 .doctor_info_item .doctor_info_content {
   width: calc(100% - 58px);
+}
+.doctor_info_item .doctor_info_content h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--textPrimary);
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.doctor_info_item .doctor_info_content p {
+color: var(--textPrimary);
+opacity: 50% ;
+margin: 0;
 }
 
 .appointment_btn {
@@ -525,6 +540,10 @@ svg {
   z-index: -1;
 }
 
+.service_item:hover::before {
+  top: 0;
+}
+
 .service_item .icon_box {
   width: 3.25rem;
   height: 3.25rem;
@@ -533,6 +552,7 @@ svg {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 1.25rem;
   position: relative;
   overflow: hidden;
   z-index: -1;
@@ -546,6 +566,12 @@ svg {
   top: 100%;
   border-radius: 0px;
   background-color: var(--bg-white);
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+}
+
+.service_item:hover .icon_box::before {
+  top: 0;
 }
 
 .service_item .icon_box img {
@@ -557,21 +583,73 @@ svg {
 .service_item .service_body {
   margin-bottom: 1.25rem;
 }
-.service_item .service_body h3{
+.service_item .service_body h3 {
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: capitalize;
   margin-bottom: 1.25rem;
   color: var(--textPrimary);
-  
-}
-.service_item .service_body p{
-  margin: 0;
-  line-height: 1.7rem;
-  color: black;
-  opacity: .6;
   transition: all 0.5s ease-in-out;
 }
 
+.service_item:hover .service_body h3 {
+  color: var(--textWhite);
+}
+.service_item .service_body p {
+  margin: 0;
+  line-height: 1.7rem;
+  color: rgb(85, 85, 85);
+  /* opacity: .6; */
+  transition: all 0.5s ease-in-out;
+}
+
+.service_item:hover .service_body p {
+  color: var(--textWhite);
+}
+
+.service_item .service_footer {
+}
+
+.service_item .service_footer a {
+  background-color: var(--bgPrimary);
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.service_item .service_footer a:hover {
+  background-color: #153c33b3;
+}
+
+.service_item .service_footer img {
+  width: 20px;
+}
+
+.service_cta_item {
+  padding: 2.5rem 6.25rem;
+  text-align: center;
+}
+
+.service_cta_item .icon_box {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.service_item .service_cta_item .service_body p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.service_cta_item:hover .service-cta-btn .btn_default::after {
+  width: 100%;
+}
+
+.service_cta_item:hover .service-cta-btn .btn_default::before {
+  background-color: var(--bgSecondary);
+}
 
 /* service end */
