@@ -11,6 +11,13 @@
   .hero_img img {
     max-width: 70%;
   }
+
+  .solution_plan_content {
+    margin-left: 0;
+  }
+  .solution_plan_content .section_title {
+    text-align: left;
+  }
 }
 
 /*  Small devices (landscape phones, less than 768px) */
@@ -36,6 +43,10 @@
 
   .our_services .section_btn {
     text-align: center;
+  }
+
+  .solution_counter_item {
+    margin-bottom: 1.25rem;
   }
 }
 
