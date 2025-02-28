@@ -1166,6 +1166,8 @@ svg {
   padding: 100px 0 50px;
   background: var(--bgTertiary) url(../images/testimonial-bg.svg) no-repeat
     center center;
+  background-attachment: fixed;
+  background-position: center 0;
 }
 
 .our_testimonial .section_title {
@@ -1272,3 +1274,122 @@ svg {
 }
 /* testimonial slider end */
 /* our testimonial end */
+
+.our_blog {
+  padding: 100px 0 70px;
+}
+
+.blog_item {
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+}
+
+.post_featured_image {
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+.post_featured_image a {
+  display: block;
+  cursor: none;
+}
+
+.post_featured_image img {
+  aspect-ratio: 1/0.65;
+  object-fit: cover;
+  border-radius: 30px;
+  transition: all 0.5s ease-out;
+}
+
+.blog_item:hover .post_featured_image img {
+  transform: scale(1.1);
+}
+
+.post_item_body {
+  margin-bottom: 20px;
+}
+
+.post_item_body h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--textPrimary);
+}
+
+.post_item_body h2 a {
+  color: inherit;
+}
+
+.post_item_footer .readmore_btn {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--accent-color);
+  padding-right: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.post_item_footer .readmore_btn::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 0;
+  bottom: 0;
+  background-image: url("../images/readmore-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s ease-in-out;
+}
+/* our blog end */
+
+/* scrolling ticker start */
+.our_scrolling_ticker {
+  background-color: var(--bgTertiary);
+  padding: 30px 0;
+}
+
+.scrolling_ticker_box {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.scrolling_content {
+  flex-shrink: 0;
+  display: flex;
+  gap: 40px;
+  min-width: 100%;
+  animation: scroll 24s linear infinite;
+}
+
+.scrolling_content span {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--textPrimary);
+  vertical-align: middle;
+}
+
+.scrolling_content span img {
+  width: 100%;
+  max-width: 30px;
+  margin-right: 40px;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - 40px));
+  }
+}
+
+/* scrolling ticker end */
