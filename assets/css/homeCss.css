@@ -11,6 +11,7 @@
   --bgPrimary: rgb(21, 60, 51);
   --bgSecondary: rgb(97, 158, 144);
   --bgTertiary: #e6efed;
+  --accent-color: #619e90;
 
   --dividerColor: #ffffff26;
   --darkDividerColor: #153c331a;
@@ -38,6 +39,10 @@ body {
 a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+
+figure {
+  margin: 0;
 }
 
 /* custom class */
@@ -108,10 +113,14 @@ a {
   background-image: url(../images/icon-phone.svg);
 }
 
-.section_title h1,
+.section_title h1 {
+  font-size: clamp(1.5625rem, 1.0446rem + 2.5893vw, 3.375rem);
+  font-weight: 700;
+  color: var(--textPrimary);
+}
+
 .section_title h2 {
   font-size: clamp(1.5625rem, 1.0446rem + 2.5893vw, 3.375rem);
-  /* line-height: 4rem; */
   font-weight: 700;
   color: var(--textPrimary);
 }
@@ -961,5 +970,193 @@ svg {
   transform: translateX(-50%);
   z-index: 1;
 }
-
 /* why choose us end */
+
+/* need attention start */
+.need_attention {
+  padding: 100px 0;
+  background-image: url("/assets/images/need-attention-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center 0;
+  position: relative;
+}
+
+.need_attention::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bgPrimary);
+  opacity: 90%;
+  z-index: 0;
+}
+
+.need_attention .container-fluid {
+  position: relative;
+  width: 100%;
+  max-width: 970px;
+  margin: 0 auto;
+  z-index: 1;
+}
+.need_attention .section_row .section_title {
+  margin-bottom: 0;
+}
+
+.need_attention .section_title {
+  text-align: center;
+}
+
+.need_attention .section_title h2 {
+  color: var(--textWhite);
+}
+
+.need_attention .section_title p {
+  color: var(--textWhite);
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.7rem;
+}
+
+/* need attention list */
+
+.need_attention_list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 0 10px 20px 10px;
+  border-bottom: 1px solid var(--dividerColor);
+}
+
+.need_attention_list .col-lg-4:nth-last-child(-n + 3) .need_attention_list {
+  margin-bottom: 0;
+  padding: 0 10px 0 10px;
+  border-bottom: none;
+}
+
+.need_attention_list .icon_box {
+  margin-right: 20px;
+}
+
+.need_attention_list .icon_box img {
+  width: 100%;
+  max-width: 2rem;
+}
+
+.need_attention_list .need_attention_content {
+  width: calc(100% - 52px);
+}
+
+.need_attention_list .need_attention_content p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--textWhite);
+  text-transform: capitalize;
+  margin: 0;
+}
+/* need attention end */
+
+/* our team start */
+.our_team {
+  padding: 100px 0;
+}
+
+.our_team .section_row .section_title {
+  margin-bottom: 0;
+}
+
+.our_team .section_title h2 {
+  width: 100%;
+  max-width: 90%;
+}
+
+.team_member_item {
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+}
+
+.team_image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.team_image img {
+  width: 100%;
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
+  transition: all 0.5s ease-in-out;
+}
+
+.team_member_item:hover .team_image img {
+  transform: scale(1.1);
+}
+
+.team_content {
+  text-align: center;
+}
+
+.team_content h3 {
+  color: var(--textPrimary);
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.team_content p {
+  text-transform: capitalize;
+  margin: 0;
+  color: var(--textPrimary);
+  opacity: 0.7;
+}
+
+.team_social_icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  transform: translateY(100%);
+  text-align: center;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.team_member_item:hover .team_social_icon {
+  bottom: 20px;
+  transform: translateY(0);
+}
+
+.team_social_icon ul {
+  display: inline-block;
+  list-style: none;
+  line-height: normal;
+  margin: 0;
+  padding: 14px 28px;
+  background: var(--bg-white);
+  border-radius: 20px;
+}
+
+.team_social_icon ul li {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.team_social_icon ul li a {
+  display: block;
+}
+
+.team_social_icon ul li a i {
+  color: var(--accent-color);
+  font-size: 22px;
+  transition: var(--transition300);
+}
+
+.team_social_icon ul li a:hover i {
+  color: var(--textPrimary);
+}
+/* our team end */
