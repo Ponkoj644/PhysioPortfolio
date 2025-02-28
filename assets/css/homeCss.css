@@ -1061,7 +1061,7 @@ svg {
 
 /* our team start */
 .our_team {
-  padding: 100px 0;
+  padding: 100px 0 70px;
 }
 
 .our_team .section_row .section_title {
@@ -1160,3 +1160,115 @@ svg {
   color: var(--textPrimary);
 }
 /* our team end */
+
+/* our testimonial start */
+.our_testimonial {
+  padding: 100px 0 50px;
+  background: var(--bgTertiary) url(../images/testimonial-bg.svg) no-repeat
+    center center;
+}
+
+.our_testimonial .section_title {
+  text-align: center;
+}
+
+.our_testimonial .section_row .section_title {
+  margin-bottom: 0;
+}
+
+.our_testimonial .section_title h3 {
+  background: var(--bg-white);
+}
+
+/* testimonial slider start */
+
+.our_testimonial .swiper-wrapper {
+  cursor: none;
+}
+.testimonial_item {
+  background: var(--bg-white);
+  border: 2px solid var(--darkDividerColor);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.testimonial_item .testimonial_header {
+  margin-bottom: 40px;
+}
+
+.testimonial_header .testimonial_rating {
+  margin-bottom: 20px;
+}
+
+.testimonial_header .testimonial_rating i {
+  font-size: 1rem;
+  color: #f5a200;
+  margin-right: 5px;
+}
+
+.testimonial_header .testimonial_content p {
+  color: var(--textPrimary);
+  opacity: 0.7;
+  margin: 0;
+}
+
+.testimonial_body {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial_body .author_image {
+  width: 56px;
+  height: 56px;
+  margin-right: 10px;
+}
+
+.testimonial_body .author_image img {
+  width: 56px;
+  height: 56px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial_body .author_content {
+  width: calc(100% - 66px);
+}
+
+.testimonial_body .author_content h3 {
+  color: var(--textPrimary);
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.testimonial_body .author_content p {
+  color: var(--textPrimary);
+  opacity: 0.7;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.testimonial-slider .swiper-pagination {
+  position: relative;
+  text-align: center;
+  bottom: 0px;
+  margin-top: 60px;
+}
+
+.testimonial-slider .swiper-pagination .swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  opacity: 1;
+  margin: 0px 6px;
+}
+
+.testimonial-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--bgPrimary);
+  opacity: 1;
+}
+/* testimonial slider end */
+/* our testimonial end */
