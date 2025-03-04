@@ -166,14 +166,14 @@ svg {
   overflow: hidden;
 }
 
-.reveal img {
+/* .reveal img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -webkit-transform-origin: left;
   transform-origin: left;
-}
+} */
 
 .image-anime {
   position: relative;
@@ -267,8 +267,7 @@ svg {
 }
 
 @keyframes exportmoveobject {
-  0% {
-  }
+
   50% {
     left: 50px;
   }
@@ -357,7 +356,6 @@ svg {
 
 .hero_bottom_content:hover .icon-box::before {
   transform: scale(1);
-  /* background-color: #ffffff; */
 }
 
 .hero_bottom_content .hero_bottom_text {
@@ -393,7 +391,7 @@ svg {
 
 /* Hero css end */
 
-/* about us */
+/* About us css start */
 .about_us {
   padding: 100px 0 50px;
   background: url(../images/about-us-bg.svg) no-repeat;
@@ -406,6 +404,141 @@ svg {
 .about_img img {
   border-radius: 30px;
 }
+
+.company_experience {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-white);
+  box-shadow: 0px 0px 24px 0px #00000012;
+  border-radius: 20px;
+  padding: 15px 20px;
+  animation: expmoveobject 3s infinite linear alternate;
+}
+
+@keyframes expmoveobject {
+  50% {
+    right: 80px;
+  }
+}
+
+.company_experience .icon-box {
+  margin-right: 10px;
+}
+
+.company_experience .icon-box img {
+  max-width: 52px;
+}
+
+.company_experience_content {
+  width: calc(100% - 62px);
+  text-align: left;
+}
+
+.company_experience_content h3 {
+  color: var(--textPrimary);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.company_experience_content p {
+  color: var(--textPrimary);
+  font-size: 14px;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+.about_content .section_title{
+  margin-bottom: 30px;
+}
+
+.about_us_body {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid var(--darkDividerColor);
+}
+
+.about_list_item {
+  width: calc(50% - 15px);
+  display: flex;
+  align-items: center;
+}
+
+.about_list_item .icon-box {
+  margin-right: 10px;
+}
+
+.about_list_item .icon-box img {
+  width: 34px;
+}
+
+.about_list_content {
+  width: calc(100% - 44px);
+}
+
+.about_list_content h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: var(--textPrimary);
+
+}
+
+/* about us footer */
+.about_us_footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doctor_info, .appointment_btn {
+  width: 50%;
+}
+
+.doctor_info_item{
+  display: flex;
+  align-items: center;
+}
+
+.doctor_info_item .image-box {
+  margin-right: 10px;
+}
+
+.appointment_btn{
+  text-align: right;
+}
+
+
+
+
+.doctor_info_item .image-box img {
+  max-width: 3rem;
+  border-radius: 100%;
+}
+
+.doctor_info_item .doctor_info_content {
+  width: calc(100% - 58px);
+}
+.doctor_info_item .doctor_info_content h3 {
+  color: var(--textPrimary);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.doctor_info_item .doctor_info_content p {
+  color: var(--textPrimary);
+  opacity: 50%;
+  margin: 0;
+}
+
+
 /* .about_us_image:hover .about_img::before {
   animation: effect_shine 1s;
 }
@@ -460,72 +593,18 @@ svg {
   border-radius: 30px;
 } */
 
-/* about us  */
 
-.about_us_text .section_title p {
-  margin: 1.875rem 0;
-}
 
-.about_us_body {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.875rem;
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid var(--darkDividerColor);
-}
 
-.about_list_item {
-  width: calc(50% - 15px);
-  display: flex;
-  align-items: center;
-}
 
-.about_list_item .icon_box {
-  margin-right: 0.625rem;
-}
 
-.about_list_item .icon_box img {
-  width: 2rem;
-}
 
-.about_list_content {
-  width: calc(100% - 44px);
-}
-
-.about_list_content h3 {
-  font-size: 1.125rem;
-  font-weight: 500;
-  text-transform: capitalize;
-  margin-bottom: 0;
-  color: var(--textPrimary);
-}
-
-/* about us footer */
-.about_us_footer {
-}
-/* d-flex align-items-center justify-content-between */
-.doctor_info {
+/* .doctor_info {
   display: flex;
   justify-content: space-between;
-}
+} */
 
-.doctor_info_item {
-}
-.doctor_info_item .image_box {
-  position: relative;
-  overflow: hidden;
-  margin-right: 10px;
-}
-.doctor_info_item .image_box img {
-  max-width: 3rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 100%;
-}
-
-.doctor_info_item .image_box::before {
+/* .doctor_info_item .image_box::before {
   position: absolute;
   content: "";
   top: 0;
@@ -545,39 +624,26 @@ svg {
     rgba(255, 255, 255, 0.3) 100%
   );
   transform: skew(-45deg);
-}
+} */
 
-.doctor_info_item:hover .image_box::before {
+/* .doctor_info_item:hover .image_box::before {
   animation: effect_shine 1s;
 }
 @keyframes effect_shine {
   100% {
     left: 150%;
   }
-}
+} */
 
-.doctor_info_item .doctor_info_content {
-  width: calc(100% - 58px);
-}
-.doctor_info_item .doctor_info_content h3 {
-  font-size: 1.25rem;
-  font-weight: 500;
-  color: var(--textPrimary);
-  text-transform: capitalize;
-  margin-bottom: 5px;
-}
 
-.doctor_info_item .doctor_info_content p {
-  color: var(--textPrimary);
-  opacity: 50%;
-  margin: 0;
-}
 
-.appointment_btn {
-  width: 50%;
-}
 
-/* gallery carousel start */
+
+/* about us company experience content */
+
+/* about us css end */
+
+/* gallery carousel css start */
 .gallery_carousel {
   padding: 3.125rem 0;
 }
