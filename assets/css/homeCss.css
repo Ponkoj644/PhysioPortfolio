@@ -113,6 +113,10 @@ figure {
   background-image: url(../images/icon-phone.svg);
 }
 
+.section_title {
+  margin-bottom: 30px;
+}
+
 .section_title h1 {
   font-size: clamp(1.5625rem, 1.0446rem + 2.5893vw, 3.375rem);
   font-weight: 700;
@@ -120,7 +124,8 @@ figure {
 }
 
 .section_title h2 {
-  font-size: clamp(1.5625rem, 1.0446rem + 2.5893vw, 3.375rem);
+  /* font-size: clamp(1.2rem, 0.5786rem + 3.1071vw, 3.375rem); */
+  font-size: clamp(1.625rem, 1.125rem + 2.5vw, 3.375rem);
   font-weight: 700;
   color: var(--textPrimary);
 }
@@ -155,6 +160,10 @@ svg {
   width: 100%;
   object-fit: cover;
   vertical-align: middle;
+}
+
+.section_row .section_title{
+  margin-bottom: 0;
 }
 
 /* image animation */
@@ -267,7 +276,6 @@ svg {
 }
 
 @keyframes exportmoveobject {
-
   50% {
     left: 50px;
   }
@@ -451,9 +459,9 @@ svg {
   margin: 0;
 }
 
-.about_content .section_title{
+/* .about_content .section_title {
   margin-bottom: 30px;
-}
+} */
 
 .about_us_body {
   display: flex;
@@ -487,7 +495,6 @@ svg {
   font-weight: 500;
   text-transform: capitalize;
   color: var(--textPrimary);
-
 }
 
 /* about us footer */
@@ -496,11 +503,12 @@ svg {
   flex-wrap: wrap;
 }
 
-.doctor_info, .appointment_btn {
+.doctor_info,
+.appointment_btn {
   width: 50%;
 }
 
-.doctor_info_item{
+.doctor_info_item {
   display: flex;
   align-items: center;
 }
@@ -509,12 +517,9 @@ svg {
   margin-right: 10px;
 }
 
-.appointment_btn{
+.appointment_btn {
   text-align: right;
 }
-
-
-
 
 .doctor_info_item .image-box img {
   max-width: 3rem;
@@ -537,109 +542,6 @@ svg {
   opacity: 50%;
   margin: 0;
 }
-
-
-/* .about_us_image:hover .about_img::before {
-  animation: effect_shine 1s;
-}
-@keyframes effect_shine {
-  100% {
-    left: 150%;
-  }
-} */
-/* .about_img {
-  position: relative;
-  overflow: hidden;
-} */
-/* .about_img::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -100%;
-  z-index: 2;
-  display: block;
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  transform: skew(-45deg);
-} */
-
-/* .about_img img {
-  border-radius: 1.875rem;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
-/* .img_overlay::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  border-radius: 30px;
-} */
-
-
-
-
-
-
-
-/* .doctor_info {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* .doctor_info_item .image_box::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -100%;
-  z-index: 2;
-  display: block;
-  width: 50%;
-  height: 100%;
-  background: -webkit-linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.3) 100%
-  );
-  transform: skew(-45deg);
-} */
-
-/* .doctor_info_item:hover .image_box::before {
-  animation: effect_shine 1s;
-}
-@keyframes effect_shine {
-  100% {
-    left: 150%;
-  }
-} */
-
-
-
-
-
-/* about us company experience content */
 
 /* about us css end */
 
@@ -718,9 +620,9 @@ svg {
   );
   transform: skew(-45deg);
 }
-/* gallery carousel end */
+/* gallery carousel css end */
 
-/* service start */
+/* service css start  */
 .our_services {
   padding: 3.125rem 0 4.375rem;
 }
@@ -812,10 +714,11 @@ svg {
   color: var(--textWhite);
 }
 .service_item .service_body p {
+  color: var(--textPrimary);
   margin: 0;
   line-height: 1.7rem;
-  color: rgb(85, 85, 85);
-  /* opacity: .6; */
+  /* color: rgb(85, 85, 85); */
+  opacity: .7;
   transition: all 0.5s ease-in-out;
 }
 
@@ -913,7 +816,8 @@ svg {
 .solution_plan_content .section_title p {
   margin-top: 1.875rem;
   margin-bottom: 0;
-  opacity: 0.6;
+  opacity: 0.5;
+  color: var(--textPrimary);
 }
 
 /* solltion plan body */
@@ -983,9 +887,9 @@ svg {
   color: var(--textPrimary);
   line-height: 1.7rem;
 }
-/* solution your plan end */
+/* solution your plan css end */
 
-/* why choose us start */
+/* why choose us css start */
 .why_choose_us {
   padding: 6.25rem 0;
 }
@@ -995,8 +899,13 @@ svg {
   margin-top: 30px;
 }
 
+.row.no-gutters > * {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
 .why_choose_us .section_row {
-  margin-bottom: 3.75rem;
+  margin-bottom: 60px;
 }
 
 .why_choose_us .section_title {
@@ -1006,19 +915,26 @@ svg {
   margin: 0 auto;
 }
 
-.why_choose_box_1 {
+.why_choose_us .why_choose_box_1 {
   background-color: var(--bgTertiary);
   border-radius: 1.875rem 0 0 1.875rem;
 }
 
-.why_choose_item {
+.why_choose_us .why_choose_item {
   display: flex;
   align-items: center;
   border-bottom: 2px solid var(--darkDividerColor);
-  padding: 2.5rem;
+  padding: 40px;
 }
 
-.why_choose_item .icon_box {
+/* .why_choose_us_box .why_choose_item{
+  border-bottom: 2px solid var(--darkDividerColor);
+  display: flex;
+  align-items: center;
+  padding: 40px;
+} */
+
+.why_choose_item .icon-box {
   background-color: var(--bg-white);
   width: 3.25rem;
   height: 3.25rem;
@@ -1032,7 +948,7 @@ svg {
   z-index: 1;
 }
 
-.why_choose_item .icon_box::before {
+.why_choose_item .icon-box::before {
   position: absolute;
   content: "";
   left: 0;
@@ -1045,17 +961,17 @@ svg {
   transition: all 0.4s ease-in-out;
 }
 
-.why_choose_item .icon_box img {
+.why_choose_item .icon-box img {
   position: relative;
   max-width: 30px;
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
 
-.why_choose_item:hover .icon_box::before {
+.why_choose_item:hover .icon-box::before {
   transform: scale(1);
 }
-.why_choose_item:hover .icon_box img {
+.why_choose_item:hover .icon-box img {
   filter: brightness(0) invert(1);
 }
 
@@ -1100,16 +1016,16 @@ svg {
   text-align: right;
 }
 
-.why_choose_box_2 .why_choose_item .icon_box {
+.why_choose_box_2 .why_choose_item .icon-box {
   margin-right: 0;
   margin-left: 20px;
 }
 
-.why_choose_box_2 .why_choose_item .icon_box::before {
+.why_choose_box_2 .why_choose_item .icon-box::before {
   background-color: var(--bgTertiary);
 }
 
-.why_choose_box_2 .why_choose_item:hover .icon_box img {
+.why_choose_box_2 .why_choose_item:hover .icon-box img {
   filter: brightness(1) invert(0);
 }
 
@@ -1181,7 +1097,7 @@ svg {
   line-height: 1.7rem;
 }
 
-/* need attention list */
+/* need attention list css */
 
 .need_attention_list {
   display: flex;
@@ -1219,19 +1135,22 @@ svg {
 }
 /* need attention end */
 
-/* our team start */
+/* our team css start */
 .our_team {
   padding: 100px 0 70px;
 }
 
 .our_team .section_row .section_title {
   margin-bottom: 0;
+  align-items: start;
+
+
 }
 
-.our_team .section_title h2 {
+/* .our_team .section_row .section_title h2 {
   width: 100%;
   max-width: 90%;
-}
+} */
 
 .team_member_item {
   height: calc(100% - 30px);
@@ -1471,8 +1390,9 @@ svg {
 }
 
 .post_item_body h2 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 1.4rem;
   color: var(--textPrimary);
 }
 

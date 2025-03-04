@@ -8,6 +8,19 @@
 
 /*  Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .section_row {
+    margin-bottom: 40px;
+  }
+
+  .section_btn {
+    text-align: left;
+    margin-top: 20px;
+  }
+
+  /* header css start */
+
+  /* header css end */
+
   /* Hero css start */
   .hero_img {
     text-align: center;
@@ -38,15 +51,10 @@
   .solution_plan_content {
     margin-left: 0;
   }
-  .section_title {
-    margin-bottom: 20px;
-  }
-  .section_btn {
-    text-align: left;
-    margin-top: 20px;
-  }
 
   /* Hero css end */
+
+  /* Solution css start */
   .solution_plan_content .section_title {
     text-align: left;
   }
@@ -55,9 +63,9 @@
     justify-content: center;
     margin-bottom: 30px;
   }
+  /* Solution css end */
 
   /* about us css */
-
   .about_us {
     padding: 50px 0 25px;
   }
@@ -72,19 +80,70 @@
     padding: 10px 15px;
   }
 
-  /* why choose us */
+  /* gallery css start */
+  .gallery_carousel {
+    padding: 25px 0;
+  }
+  /* gallery css end */
 
+  /* our cervice css start */
+  .our_services {
+    padding: 25px 0 20px;
+  }
+
+  .service_item {
+    padding: 20px;
+  }
+  /* our cervice css end */
+
+  /* our plan css start */
+  .solution_your_plan {
+    padding: 50px 0;
+  }
+  /* our plan css end */
+
+  /* why choose us css start */
   .why_choose_us {
     padding: 50px 0;
   }
 
-  .why_choose_box_1 {
+  .why_choose_us .why_choose_box_1 {
     border-radius: 30px 30px 0 0px;
   }
 
-  .why_choose_box_2 {
+  .why_choose_us .why_choose_box_2 {
     border-radius: 0 0 30px 30px;
   }
+
+  .why_choose_us .why_choose_image {
+    display: none;
+  }
+  /* why choose us css end */
+
+  /* our team css start */
+  .our_team {
+    padding: 50px 0 20px;
+  }
+  /* our team css end */
+
+  /* client testimonial css start */
+  .our_testimonial {
+    padding: 50px 0 25px;
+  }
+  /* client testimonial css end */
+
+  /* our blog css start */
+  .our_blog {
+    padding: 50px 0 25px;
+  }
+  .post_featured_image {
+    margin-bottom: 20px;
+  }
+
+  .post_item_body h2 {
+    font-size: 18px;
+  }
+  /* our blog css end */
 
   /* footer css start */
   .main_footer {
@@ -131,6 +190,25 @@
   .btn_default {
     padding: 15px 55px 15px 15px;
   }
+
+  .section_title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .section_btn {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .section_title p {
+    margin-top: 20px;
+  }
+
+  .section_row {
+    margin-bottom: 30px;
+  }
+
   /* Hero css start */
   .hero_bottom .hero_bottom_content {
     padding-right: 0;
@@ -163,27 +241,67 @@
     text-align: left;
   }
 
-  .section_row {
+  .company_experience_content {
+    width: calc(100% - 52px);
+    text-align: left;
+  }
+
+  .company_experience_content h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  /* our service start */
+  .our_services .section_row {
     text-align: center;
     justify-content: center;
     margin-bottom: 30px;
-    gap: 1rem;
   }
 
-  .our_services .section_btn {
-    text-align: center;
+  /* our soltion css start */
+  .solution_plan_image {
+    margin-bottom: 20px;
+  }
+
+  .solution_plan_content .section_title {
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
+  .solution_plan_content .section_title p {
+    margin-top: 20px;
+  }
+
+  .solution_plan_body {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
   }
 
   .solution_counter_item {
-    margin-bottom: 1.25rem;
+    margin-bottom: 20px;
   }
+  /* our soltion css end */
 
-  .why_choose_item {
+  /* why choose us css start */
+  .why_choose_us .why_choose_item {
     padding: 20px 15px;
   }
+  /* why choose us css end */
+
+  /* need attention css start */
+  .need_attention {
+    padding: 50px 0 30px;
+  }
+  /* need attention css end */
+
+  /* our team css start */
+  /* our team css end */
+
+  /* our blog css start */
+
+  /* our blog css end */
 
   /* footer css start */
-
   .footer_contact_details .footer_info_box {
     margin-bottom: 15px;
   }
