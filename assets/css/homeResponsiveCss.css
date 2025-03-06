@@ -18,6 +18,29 @@
   }
 
   /* header css start */
+  .header_area .my_navbar .navbar-nav {
+    background-color: var(--bgPrimary);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 5px;
+  }
+
+  .header_area .my_navbar .nav-item {
+    width: 100%;
+  }
+
+  .header_area .my_navbar .nav-link {
+    color: var(--textWhite);
+    font-weight: normal;
+    padding: 0.5rem 2rem;
+    width: 50%;
+    border-radius: 5px;
+  }
+
+  .header_area .my_navbar .nav-link:hover {
+    background-color: var(--accent-color);
+    transform: translateX(5px);
+  }
 
   /* header css end */
 
@@ -120,6 +143,12 @@
   }
   /* why choose us css end */
 
+  /* need attention css start */
+  .need_attention_list .need_attention_content p {
+    font-size: 16px;
+  }
+  /* need attention css end */
+
   /* our team css start */
   .our_team {
     padding: 50px 0 20px;
@@ -210,6 +239,10 @@
   }
 
   /* Hero css start */
+  .hero_area .section_title {
+    text-align: start;
+  }
+
   .hero_bottom .hero_bottom_content {
     padding-right: 0;
     border: none;
@@ -220,6 +253,10 @@
   }
 
   /* about us css start */
+
+  .about_us .section_title {
+    text-align: start;
+  }
   .about_us_body {
     flex-direction: column;
     gap: 20px;
@@ -292,6 +329,18 @@
   .need_attention {
     padding: 50px 0 30px;
   }
+
+  .need_attention .need_attention_list .icon_box {
+    margin-right: 10px;
+  }
+
+  .need_attention .col-lg-4:nth-last-child(-n + 3) .need_attention_list,
+  .need_attention .col-lg-4 .need_attention_list {
+    margin-bottom: 20px;
+    padding: 0px 0px 20px 0px;
+    border-bottom: 1px solid var(--dividerColor);
+  }
+
   /* need attention css end */
 
   /* our team css start */
@@ -341,6 +390,13 @@
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .my_navbar .navbar-brand {
+    width: 70%;
+  }
+  .my_navbar .navbar-brand img {
+    width: 90%;
+  }
+
   .hero_btn {
     flex-direction: column;
     align-items: start;
