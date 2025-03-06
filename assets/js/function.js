@@ -26,3 +26,10 @@ if ($(".testimonial-slider").length) {
     },
   });
 }
+
+// Conterup JS
+
+$(".counter").counterUp({
+  delay: 50,
+  time: 5000,
+});
