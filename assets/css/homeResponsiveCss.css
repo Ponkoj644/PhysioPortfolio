@@ -8,6 +8,10 @@
 
 /*  Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .section_title {
+    margin-bottom: 20px;
+  }
+
   .section_row {
     margin-bottom: 40px;
   }
@@ -463,6 +467,20 @@
   }
   .cta_appointment_btn {
     text-align: left;
+  }
+
+  /* quality treatment content start */
+
+  .quality_treatment {
+    padding: 50px 0;
+  }
+
+  .quality_treatment_video {
+    margin-bottom: 20px;
+  }
+
+  .quality_treatment_content {
+    padding-left: 0;
   }
 
   /*  about us page css end*/
