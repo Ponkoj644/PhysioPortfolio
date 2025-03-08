@@ -2020,8 +2020,94 @@ svg {
   top: 4px;
   left: 0;
 }
-
 /* quality treatment css end */
+
+/* therapy process css start */
+.therapy_process {
+  padding: 100px 0 70px;
+}
+
+.therapy_process .section_title {
+  text-align: center;
+}
+
+.therapy_process_item {
+  text-align: center;
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+}
+
+.therapy_process_item .icon-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.therapy_process_item .icon-box img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.therapy_process_item .therapy_process_content h3 {
+  color: var(--textPrimary);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.4rem;
+  text-transform: capitalize;
+  max-width: 220px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.therapy_process_item .therapy_process_content p {
+  color: var(--textPrimary);
+  opacity: 0.7;
+  margin: 0;
+}
+
+.therapy_process
+  .col-lg-3:nth-child(odd)
+  .therapy_process_item
+  .icon-box::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url(../images/icon-right-up-arrow.svg) no-repeat right center;
+  top: 50%;
+  right: 0;
+  width: 135px;
+  height: 23px;
+  background-size: 100% auto;
+  transform: translate(175px, -50%);
+  z-index: 2;
+}
+
+.therapy_process
+  .col-lg-3:nth-child(even)
+  .therapy_process_item
+  .icon-box::before {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url(../images/icon-right-up-arrow.svg) no-repeat right center;
+  top: 50%;
+  right: 0;
+  width: 135px;
+  height: 23px;
+  background-size: 100% auto;
+  transform: translate(175px, -50%);
+  z-index: 2;
+}
+
+.therapy_process
+  .col-lg-3:nth-child(even):last-child
+  .therapy_process_item
+  .icon-box::before {
+  display: none;
+}
 
 /* about us page css end */
 /* OTHERS PAGE CSS END */

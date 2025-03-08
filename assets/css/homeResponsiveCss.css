@@ -483,7 +483,41 @@
     padding-left: 0;
   }
 
+  /* therapy process css start */
+  .therapy_process {
+    padding: 50px 0 20px;
+  }
+
+  .therapy_process_item .icon-box {
+    margin-bottom: 20px;
+  }
+
+  .therapy_process
+    .col-lg-3:nth-child(odd)
+    .therapy_process_item
+    .icon-box::before {
+    transform: translate(210px, -50%);
+  }
+
+  .therapy_process
+    .col-lg-3:nth-child(even)
+    .therapy_process_item
+    .icon-box::before {
+    display: none;
+  }
+  /* therapy process css end */
+
   /*  about us page css end*/
+}
+
+/*  Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .therapy_process
+    .col-lg-3:nth-child(odd)
+    .therapy_process_item
+    .icon-box::before {
+    display: none;
+  }
 }
 
 /* OTHER PAGE RESPONSIVE CSS END */
