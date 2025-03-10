@@ -2108,6 +2108,13 @@ svg {
   .icon-box::before {
   display: none;
 }
-
 /* about us page css end */
+
+/* service page css start */
+
+.page_services{
+  padding: 100px 0;
+}
+
+/* service page css end */
 /* OTHERS PAGE CSS END */

@@ -414,6 +414,7 @@
 
 /* OTHER PAGE RESPONSIVE CSS START */
 
+/*  aboutus page css start*/
 @media (max-width: 991.98px) {
   .page_header {
     padding: 50px 0;
@@ -506,8 +507,6 @@
     display: none;
   }
   /* therapy process css end */
-
-  /*  about us page css end*/
 }
 
 /*  Small devices (landscape phones, less than 768px) */
@@ -519,5 +518,15 @@
     display: none;
   }
 }
+/*  aboutus page css end */
+
+/* service page css start */
+@media (max-width: 991.98px) {
+  .page_services{
+    padding: 50px 0;
+  }
+}
+
+/* service page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */
