@@ -413,7 +413,6 @@
 }
 
 /* OTHER PAGE RESPONSIVE CSS START */
-
 /*  aboutus page css start*/
 @media (max-width: 991.98px) {
   .page_header {
@@ -509,7 +508,6 @@
   /* therapy process css end */
 }
 
-/*  Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .therapy_process
     .col-lg-3:nth-child(odd)
@@ -522,11 +520,33 @@
 
 /* service page css start */
 @media (max-width: 991.98px) {
-  .page_services{
+  .page_services {
     padding: 50px 0;
   }
 }
-
 /* service page css end */
+
+/* contact us page css start */
+
+@media (max-width: 991.98px) {
+  .contact_page {
+    padding: 50px 0 0;
+  }
+
+  .contact_us_form {
+    padding: 25px 0 50px;
+  }
+
+  .contact_us_img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .contact_form {
+    margin-left: 0;
+  }
+}
+
+/* contact us page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */

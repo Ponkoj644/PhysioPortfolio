@@ -1,9 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio || Contact</title>
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiperjs css cdn -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../assets/css/homeCss.css" />
+
+    <!-- home responsive css -->
+    <link rel="stylesheet" href="../assets/css/homeResponsiveCss.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- header start -->
+    <header class="header_area">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg py-2 py-lg-4 shadow-sm my_navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 d-inline-flex align-items-center justify-content-between gap-2 gap-lg-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Service Details</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
+                  <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                  <li><a class="dropdown-item" href="#">Other Therapist</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Therapist Details</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li><a class="dropdown-item" href="#">FAQ's</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Book Appointment</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">404</a></li>
+
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="d-none d-xl-block d-xl-block">
+              <a href="#" class="btn_default header_btn d-inline-flex"
+                >+(880) 1833-044436</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- page header start -->
+      <section class="page_header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- page header box start -->
+              <div class="page_header_box">
+                <h1>Contact Us</h1>
+                <nav>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../index.html">home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">
+                      services
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <!-- page header box end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page header end -->
+
+      <!--contact page  start -->
+      <section class="contact_page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <!-- contact info item start -->
+              <div class="contact_info_item">
+                <!-- icon box -->
+                <div class="icon-box">
+                  <img
+                    src="../assets/images/icon-green-location-icon.svg"
+                    alt="Location"
+                  />
+                </div>
+
+                <!-- contact info item -->
+                <div class="contact_info_content">
+                  <h3>location</h3>
+                  <p>24/11 Robert Road , New York , USA</p>
+                </div>
+              </div>
+              <!-- contact info item end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- contact info item start -->
+              <div class="contact_info_item">
+                <!-- icon box -->
+                <div class="icon-box">
+                  <img
+                    src="../assets/images/green-mail-icon.svg"
+                    alt="Location"
+                  />
+                </div>
+
+                <!-- contact info item -->
+                <div class="contact_info_content">
+                  <h3>email</h3>
+                  <p>info@domainname.com</p>
+                  <p>sales@domainname.com</p>
+                </div>
+              </div>
+              <!-- contact info item end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- contact info item start -->
+              <div class="contact_info_item">
+                <!-- icon box -->
+                <div class="icon-box">
+                  <img
+                    src="../assets/images/green-phone-icon.svg"
+                    alt="Location"
+                  />
+                </div>
+
+                <!-- contact info item -->
+                <div class="contact_info_content">
+                  <h3>phone</h3>
+                  <p>(+01) 234 567 890</p>
+                  <p>(+01) 234 567 890</p>
+                </div>
+              </div>
+              <!-- contact info item end -->
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <!-- contact info item start -->
+              <div class="contact_info_item">
+                <!-- icon box -->
+                <div class="icon-box">
+                  <img
+                    src="../assets/images/green-phone-icon.svg"
+                    alt="Location"
+                  />
+                </div>
+
+                <!-- contact info item -->
+                <div class="contact_info_content">
+                  <h3>working hours</h3>
+                  <p>Sat to Thus : 10:00 To 6:00</p>
+                  <p>Fri : 10:00AM To 3:00PM</p>
+                </div>
+              </div>
+              <!-- contact info item end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact page  end -->
+
+      <!-- contact us form start -->
+      <div class="contact_us_form">
+        <div class="container-fluid">
+          <div class="row align-item-center">
+            <div class="col-lg-6">
+              <div class="contact_us_img">
+                <figure class="reveal image-anime">
+                  <img
+                    src="../assets/images/contact-us-img.jpg"
+                    alt="Contact Us"
+                  />
+                </figure>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="contact_form">
+                <!-- Section Title Start -->
+                <div class="section_title">
+                  <h3>contact us</h3>
+                  <h2><span>Get</span> In Touch With Us</h2>
+                </div>
+                <!-- Section Title End -->
+
+                <form
+                  id="contactForm"
+                  action="#"
+                  method="POST"
+                  data-toggle="validator"
+                >
+                  <div class="row">
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="text"
+                        name="name"
+                        class="form-control"
+                        id="fullname"
+                        placeholder="Enter Name"
+                        required=""
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter Email"
+                        required=""
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="text"
+                        name="phone"
+                        class="form-control"
+                        id="phone"
+                        placeholder="Phone Number"
+                        required=""
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-6 mb-4">
+                      <input
+                        type="text"
+                        name="subject"
+                        class="form-control"
+                        id="subject"
+                        placeholder="Subject"
+                        required=""
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="form-group col-md-12 mb-5">
+                      <textarea
+                        name="msg"
+                        class="form-control"
+                        id="msg"
+                        rows="5"
+                        placeholder="Your Message"
+                        required=""
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+
+                    <div class="col-md-12">
+                      <button type="submit" class="btn_default disabled">
+                        send message
+                      </button>
+                      <div id="msgSubmit" class="h3 hidden"></div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact us form end -->
+
+      <!-- google map start -->
+      <div class="google_map">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- google map iframe start -->
+              <div class="google_map_iframe">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.06397394204!2d90.25487403602551!3d23.780753027913462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1741675443464!5m2!1sen!2sbd"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+              <!-- google map iframe end -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- google map end -->
+
+      <!-- our scrolling ticker start -->
+      <div class="our_scrolling_ticker">
+        <!-- Scrolling Ticker Start -->
+        <div class="scrolling_ticker_box">
+          <div class="scrolling_content">
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />Emergency No. : (+880) 183 304 4436
+            </span>
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />For any additional inqueries : info@domainname.com</span
+            >
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />Book Appointment: (+880) 183 304 4436</span
+            >
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />Working Hourse : Mon to Fri : 10:00 To 6:00
+            </span>
+          </div>
+
+          <div class="scrolling_content">
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />Emergency
+              No. : (+880) 183 304 4436</span
+            >
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />For any
+              additional inqueries : info@domainname.com</span
+            >
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />Book
+              Appointment: (+880) 183 304 4436</span
+            >
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />Working
+              Hourse : Mon to Fri : 10:00 To 6:00
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- our scrolling ticker end -->
+    </main>
+
+    <!-- footer start -->
+    <footer class="main_footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- About Footer Start -->
+            <div class="about_footer">
+              <!-- Footer Logo Start -->
+              <div class="footer_logo">
+                <img src="../assets/images/footer-logo.svg" alt="" />
+              </div>
+              <!-- Footer Logo End -->
+
+              <!-- About Footer Content Start -->
+              <div class="about_footer_content">
+                <p>
+                  We understand that injuries and acute pain can happen
+                  unexpectedly. Our emergency physiotherapy.
+                </p>
+              </div>
+              <!-- Footer Social Links Start -->
+              <div class="footer_social_links">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer Social Links End -->
+            </div>
+            <!-- About Footer End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- About Links Start -->
+            <div class="about_working_hour">
+              <h3>working hours</h3>
+              <ul>
+                <li>sat to wed : 10:00 to 6:00</li>
+                <li>thu : 10:00AM to 3:00PM</li>
+                <li>fri : closed</li>
+              </ul>
+            </div>
+            <!-- About Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- About Links Start -->
+            <div class="about_service_list">
+              <h3>more services</h3>
+              <ul>
+                <li><a href="#">manual therapy</a></li>
+                <li><a href="#">chronic pain</a></li>
+                <li><a href="#">hand therapy</a></li>
+              </ul>
+            </div>
+            <!-- About Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- About Links Start -->
+            <div class="footer_contact">
+              <h3>contact</h3>
+              <!-- Footer Contact Details Start -->
+              <div class="footer_contact_details">
+                <!-- Footer Info Box Start -->
+                <div class="footer_info_box">
+                  <div class="icon-box">
+                    <img src="../assets/images/icon-phone.svg" alt="" />
+                  </div>
+                  <div class="footer_info_box_content">
+                    <p>(+880) 183 304 4436</p>
+                  </div>
+                </div>
+                <!-- Footer Info Box End -->
+
+                <!-- Footer Info Box Start -->
+                <div class="footer_info_box">
+                  <div class="icon-box">
+                    <img src="../assets/images/icon-mail.svg" alt="" />
+                  </div>
+                  <div class="footer_info_box_content">
+                    <p>example@gmail.com</p>
+                  </div>
+                </div>
+                <!-- Footer Info Box End -->
+
+                <!-- Footer Info Box Start -->
+                <div class="footer_info_box">
+                  <div class="icon-box">
+                    <img src="../assets/images/icon-location.svg" alt="" />
+                  </div>
+                  <div class="footer_info_box_content">
+                    <p>24/11 Road, City, Country</p>
+                  </div>
+                </div>
+                <!-- Footer Info Box End -->
+              </div>
+              <!-- Footer Contact Details End -->
+            </div>
+            <!-- About Links End -->
+          </div>
+        </div>
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer_copyright">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <!-- Footer Copyright Start -->
+              <div class="footer_copyright_text">
+                <p>Copyright 2025 Physiocare. All Rights Reserved.</p>
+              </div>
+              <!-- Footer Copyright End -->
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <!-- Footer Social Link Start -->
+              <div class="footer_links">
+                <ul>
+                  <li><a href="./aboutus.html">about us</a></li>
+                  <li><a href="./services.html">services</a></li>
+                  <li><a href="./contactus.html">contact us</a></li>
+                </ul>
+              </div>
+              <!-- Footer Social Link End -->
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright Section End -->
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- main end -->
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiperjs js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+
+    <!-- Validation js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"
+      integrity="sha512-dTu0vJs5ndrd3kPwnYixvOCsvef5SGYW/zSSK4bcjRBcZHzqThq7pt7PmCv55yb8iBvni0TSeIDV8RYKjZL36A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- My script -->
+    <script src="../assets/js/function.js"></script>
+  </body>
 </html>
