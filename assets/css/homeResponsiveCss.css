@@ -576,27 +576,37 @@
     gap: 15px;
   }
 
-  .service_entry_image figure{
+  .service_entry_image figure {
     display: block;
   }
 
-  .service_sidebar{
+  .service_sidebar {
     margin-left: 0;
   }
-
-
 }
 
-@media (max-width: 767.98px){
-  .service_entry_img_1{
+@media (max-width: 767.98px) {
+  .service_entry_img_1 {
     margin-bottom: 20px;
   }
 
-  .service_category_list, .opening_hour_section{
+  .service_category_list,
+  .opening_hour_section {
     margin-bottom: 20px;
   }
 }
-
 /* single service page css end  */
+
+/* blog page css start */
+@media (max-width: 991.98px) {
+  .blog_page{
+    padding: 50px 0;
+  }
+
+  .post_pagination {
+    margin-top: 10px;
+}
+}
+/* blog page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */
