@@ -610,7 +610,6 @@
 /* blog page css end */
 
 /* single blog page css start */
-
 @media (max-width: 991.98px) {
   .single_post_page {
     padding: 50px 0;
@@ -652,5 +651,13 @@
   }
 }
 /* single blog page css end */
+
+/* therapists page css start */
+@media (max-width: 991.98px){
+  .team_page{
+    padding: 50px 0;
+  }
+}
+/* therapists page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */

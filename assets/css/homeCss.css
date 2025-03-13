@@ -1179,6 +1179,7 @@ svg {
 .team_content h3 {
   color: var(--textPrimary);
   font-size: 20px;
+  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -2602,7 +2603,17 @@ textarea .form-control {
 .post_social_sharing ul li:hover a{
   background-color: var(--bgPrimary);
 }
-
 /* single blog page css end  */
+
+/* Our therapist page css start */
+.team_page{
+  padding: 100px 0;
+}
+
+.team_page .team_member_item{
+  height: calc(100% - 40px);
+    margin-bottom: 40px;
+}
+/* Our therapist page css end */
 
 /* OTHERS PAGE CSS END */
