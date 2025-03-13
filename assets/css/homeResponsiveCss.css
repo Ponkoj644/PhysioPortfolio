@@ -527,7 +527,6 @@
 /* service page css end */
 
 /* contact us page css start */
-
 @media (max-width: 991.98px) {
   .contact_page {
     padding: 50px 0 0;
@@ -546,7 +545,58 @@
     margin-left: 0;
   }
 }
-
 /* contact us page css end */
+
+/* single service page css start  */
+
+@media (max-width: 991.98px) {
+  .single_service_page {
+    padding: 50px 0;
+  }
+
+  .single_service_content {
+    margin-bottom: 30px;
+  }
+
+  .service_featured_img {
+    margin-bottom: 20px;
+  }
+
+  .service_entry h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .service_entry p {
+    margin-bottom: 20px;
+  }
+
+  .service_entry ul {
+    margin-bottom: 20px;
+    gap: 15px;
+  }
+
+  .service_entry_image figure{
+    display: block;
+  }
+
+  .service_sidebar{
+    margin-left: 0;
+  }
+
+
+}
+
+@media (max-width: 767.98px){
+  .service_entry_img_1{
+    margin-bottom: 20px;
+  }
+
+  .service_category_list, .opening_hour_section{
+    margin-bottom: 20px;
+  }
+}
+
+/* single service page css end  */
 
 /* OTHER PAGE RESPONSIVE CSS END */
