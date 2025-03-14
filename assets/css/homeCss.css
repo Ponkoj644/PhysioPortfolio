@@ -1653,6 +1653,7 @@ svg {
   text-align: center;
   font-weight: 700;
   margin-bottom: 30px;
+  text-transform: capitalize;
 }
 
 .page_header_box ol {
@@ -2600,20 +2601,300 @@ textarea .form-control {
   transition: var(--transition300);
 }
 
-.post_social_sharing ul li:hover a{
+.post_social_sharing ul li:hover a {
   background-color: var(--bgPrimary);
 }
 /* single blog page css end  */
 
 /* Our therapist page css start */
-.team_page{
+.team_page {
   padding: 100px 0;
 }
 
-.team_page .team_member_item{
+.team_page .team_member_item {
   height: calc(100% - 40px);
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 /* Our therapist page css end */
+
+/* single therapist page css start */
+.single_team_page {
+  padding: 100px 25px 25px;
+}
+
+.single_team_page .row {
+  background-color: var(--bgPrimary);
+  border-radius: 35px 30px 30px 35px;
+}
+
+.team_member_image {
+  height: 100%;
+}
+
+.team_member_image figure {
+  height: 100%;
+}
+
+.team_member_image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 30px 0 0 30px;
+}
+
+.team_member_details {
+  height: 100%;
+  margin-left: 30px;
+  padding: 50px 30px;
+}
+
+.member_detail_header {
+  margin-bottom: 40px;
+}
+
+.member_detail_header h2 {
+  color: var(--textWhite);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.member_detail_header P {
+  color: var(--textWhite);
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0;
+  line-height: 1.7rem;
+}
+
+.member_detail_content {
+  margin-bottom: 40px;
+}
+
+.member_detail_content p {
+  color: var(--textWhite);
+  font-size: 18px;
+  text-transform: capitalize;
+  margin: 0;
+  line-height: 1.7rem;
+}
+
+.member_detail_content p:last-child {
+  margin-bottom: 0;
+}
+
+.member_detail_body {
+  margin-bottom: 40px;
+}
+
+.member_detail_body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.member_detail_body ul li {
+  color: var(--textWhite);
+  font-size: 18px;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.member_detail_body ul li span {
+  width: 30%;
+  font-weight: 500;
+}
+
+.member_social_list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.member_social_list ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.member_social_list ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--textWhite);
+  transition: var(--transition300);
+}
+
+.member_social_list ul li a i {
+  font-size: 20px;
+  color: inherit;
+  transition: var(--transition300);
+}
+
+.member_social_list ul li:hover a {
+  color: var(--textSecondary);
+}
+
+.about_member_details {
+  padding: 25px 25px 100px;
+}
+
+.about_member_info {
+  border: 2px solid var(--darkDividerColor);
+  border-radius: 30px;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+
+.member_info_title {
+  margin-bottom: 30px;
+}
+
+.member_info_title h2 {
+  color: var(--textPrimary);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.member_info_content P {
+  color: var(--textPrimary);
+  opacity: 0.7;
+}
+
+.member_info_content p:last-child {
+  margin-bottom: 0;
+}
+
+.member_winning_awards {
+  border: 2px solid var(--darkDividerColor);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.winning_awards_content {
+  margin-bottom: 30px;
+}
+
+.winning_awards_content h2 {
+  color: var(--textPrimary);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.winning_awards_content p:last-child {
+  margin-bottom: 0;
+  color: var(--textPrimary);
+  opacity: 0.7;
+}
+
+.winning_awards_box {
+  text-align: center;
+}
+
+.winning_awards_box .row .col-6 {
+  padding: 0;
+}
+
+.winning_award_img.img-box-1 {
+  border-right: 2px solid var(--darkDividerColor);
+  border-bottom: 2px solid var(--darkDividerColor);
+  padding-bottom: 35px;
+}
+
+.winning_award_img.img-box-2 {
+  border-bottom: 2px solid var(--darkDividerColor);
+  padding-bottom: 35px;
+}
+
+.winning_award_img.img-box-3 {
+  padding-top: 35px;
+  border-right: 2px solid var(--darkDividerColor);
+}
+
+.winning_award_img.img-box-4 {
+  padding-top: 35px;
+}
+
+.winning_award_img img {
+  max-width: 129px;
+}
+
+/* team member skills start */
+.team_member_skills {
+  padding: 40px;
+  margin-bottom: 30px;
+  border: 2px solid var(--darkDividerColor);
+  border-radius: 30px;
+}
+
+.member_skills_title {
+  margin-bottom: 30px;
+}
+
+.member_skills_title h2 {
+  color: var(--textPrimary);
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.team_member_skills .skills_progress_bar {
+  margin-bottom: 30px;
+}
+.team_member_skills .skills_progress_bar:last-child {
+  margin-bottom: 0;
+}
+
+.skillbar .skill-data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.skillbar .skill-data .skill-title {
+  color: var(--textPrimary);
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.skillbar .skill-data .skill-no {
+  color: var(--textPrimary);
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+.skillbar .skill-progress {
+  width: 100%;
+  height: 10px;
+  background: var(--bgTertiary);
+  border-radius: 99px;
+  position: relative;
+}
+
+.skillbar .skill-progress .count-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: var(--bgSecondary);
+  border-radius: 99px;
+}
+
+.cta_infobar.team_sidebar_cta .cta_info_content p{
+  margin-bottom: 20px;
+}
+
+.cta_infobar.team_sidebar_cta .cta_appointment_btn{
+  text-align: left;
+}
+
+
+/* single therapist page css end */
 
 /* OTHERS PAGE CSS END */

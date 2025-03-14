@@ -586,6 +586,10 @@
 }
 
 @media (max-width: 767.98px) {
+
+  .service_entry ul li {
+    width: 100%;
+}
   .service_entry_img_1 {
     margin-bottom: 20px;
   }
@@ -645,7 +649,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .page_header_box h1 {
     font-size: 30px;
   }
@@ -653,11 +657,118 @@
 /* single blog page css end */
 
 /* therapists page css start */
-@media (max-width: 991.98px){
-  .team_page{
+@media (max-width: 991.98px) {
+  .team_page {
     padding: 50px 0;
   }
 }
 /* therapists page css end */
+
+/* single therapist page css start */
+
+@media (max-width: 991.98px) {
+  .single_team_page {
+    padding: 50px 20px 25px 20px;
+  }
+
+  .single_team_page .row {
+    border-radius: 40px 40px 30px 30px;
+  }
+
+  .team_member_image img {
+    aspect-ratio: 1 / 0.85;
+    border-radius: 30px 30px 0 0px;
+  }
+
+  .team_member_details {
+    margin-left: 0;
+    padding: 30px;
+  }
+
+  .member_detail_header {
+    margin-bottom: 30px;
+  }
+  .member_detail_header h2 {
+    font-size: 28px;
+  }
+
+  .member_detail_content {
+    margin-bottom: 30px;
+  }
+
+  .member_detail_body {
+    margin-bottom: 30px;
+  }
+
+  .about_member_details {
+    padding: 25px 0 50px;
+  }
+
+  .about_member_info {
+    padding: 30px;
+  }
+
+  .member_info_title {
+    margin-bottom: 20px;
+  }
+
+  .member_info_title h2 {
+    font-size: 28px;
+  }
+
+  .member_winning_awards {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .winning_awards_content h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .team_member_skills{
+    padding: 30px;
+  }
+
+  .team_member_skills .skills_progress_bar {
+    margin-bottom: 35px;
+}
+
+  .cta_infobar.team_sidebar_cta .cta_info_content{
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .team_member_details {
+    padding: 20px;
+  }
+
+  .member_detail_header {
+    margin-bottom: 20px;
+  }
+
+  .member_detail_header h2 {
+    font-size: 24px;
+  }
+
+  .member_detail_content p {
+    font-size: 16px;
+  }
+
+  .member_detail_body {
+    margin-bottom: 20px;
+  }
+
+  .member_detail_body ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .member_detail_body ul li span {
+    width: 45%;
+    font-weight: 500;
+  }
+}
+
+/* single therapist page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */
