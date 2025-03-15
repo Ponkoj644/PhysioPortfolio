@@ -584,12 +584,10 @@
     margin-left: 0;
   }
 }
-
 @media (max-width: 767.98px) {
-
   .service_entry ul li {
     width: 100%;
-}
+  }
   .service_entry_img_1 {
     margin-bottom: 20px;
   }
@@ -648,7 +646,6 @@
     text-align: left;
   }
 }
-
 @media (max-width: 767.98px) {
   .page_header_box h1 {
     font-size: 30px;
@@ -665,7 +662,6 @@
 /* therapists page css end */
 
 /* single therapist page css start */
-
 @media (max-width: 991.98px) {
   .single_team_page {
     padding: 50px 20px 25px 20px;
@@ -725,19 +721,18 @@
     margin-bottom: 20px;
   }
 
-  .team_member_skills{
+  .team_member_skills {
     padding: 30px;
   }
 
   .team_member_skills .skills_progress_bar {
     margin-bottom: 35px;
-}
+  }
 
-  .cta_infobar.team_sidebar_cta .cta_info_content{
+  .cta_infobar.team_sidebar_cta .cta_info_content {
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 767.98px) {
   .team_member_details {
     padding: 20px;
@@ -768,7 +763,16 @@
     font-weight: 500;
   }
 }
-
 /* single therapist page css end */
+
+/* testimonial page css start */
+
+@media (max-width: 991.98px){
+
+  .page_video_gallery{
+    padding:50px 0 20px ;
+  }
+}
+/* testimonial page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */

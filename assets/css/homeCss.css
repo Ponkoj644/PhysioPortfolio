@@ -1652,7 +1652,7 @@ svg {
   font-size: 57px;
   text-align: center;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: capitalize;
 }
 
@@ -2886,15 +2886,91 @@ textarea .form-control {
   border-radius: 99px;
 }
 
-.cta_infobar.team_sidebar_cta .cta_info_content p{
+.cta_infobar.team_sidebar_cta .cta_info_content p {
   margin-bottom: 20px;
 }
 
-.cta_infobar.team_sidebar_cta .cta_appointment_btn{
+.cta_infobar.team_sidebar_cta .cta_appointment_btn {
   text-align: left;
 }
-
-
 /* single therapist page css end */
+
+/* testimonial page css start */
+.page_video_gallery {
+  padding: 100px 0 70px;
+}
+
+.photo_gallery {
+  margin-bottom: 30px;
+}
+
+.photo_gallery a {
+  cursor: none;
+}
+
+.photo_gallery figure {
+  position: relative;
+}
+
+.photo_gallery figure::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: var(--bgPrimary);
+  opacity: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+  z-index: 1;
+}
+
+.photo_gallery figure::after {
+  position: absolute;
+  content: "\f144";
+  font-family: "Font Awesome 6 Free";
+  background: var(--textWhite);
+  border-radius: 100%;
+  color: var(--textSecondary);
+  font-size: 46px;
+  font-weight: 900;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-50%);
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease-in-out;
+  z-index: 1;
+}
+
+.photo_gallery img {
+  position: relative;
+  aspect-ratio: 1/ 0.85;
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+.photo_gallery:hover figure::before {
+  opacity: 40%;
+  visibility: visible;
+  transform: scale(1);
+  border-radius: 30px;
+}
+
+.photo_gallery:hover figure::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* testimonial page css end */
 
 /* OTHERS PAGE CSS END */
