@@ -224,6 +224,11 @@
     padding: 15px 55px 15px 15px;
   }
 
+  .btn_default::before {
+    width: 32px;
+    height: 32px;
+  }
+
   .section_title {
     text-align: center;
     margin-bottom: 20px;
@@ -809,5 +814,54 @@
   }
 }
 /* faq page css end */
+
+/* appointment page css start */
+
+@media (max-width: 991.98px) {
+  .book_appointment_page {
+    padding: 50px 0;
+  }
+
+  .book_appointment_page .book_appointment_form {
+    padding: 30px;
+  }
+
+  .appointment_form .form-control {
+    padding: 12px 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .book_appointment_page .book_appointment_form {
+    padding: 20px;
+  }
+}
+/* appointment page css end */
+
+/* 404 error page css start */
+@media (max-width: 991.98px) {
+  .error_page {
+    padding: 50px 0;
+  }
+
+  .error_page_image {
+    margin-bottom: 20px;
+  }
+
+  .error_page_content_heading {
+    margin-bottom: 20px;
+  }
+
+  .error_page_content_heading h2 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .error_page_content_heading h2 {
+    font-size: 26px;
+  }
+}
+/* 404 error page css end */
 
 /* OTHER PAGE RESPONSIVE CSS END */

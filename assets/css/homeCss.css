@@ -3104,12 +3104,12 @@ textarea .form-control {
 /* faq page css end */
 
 /* appointment page css start */
-.book_appointment_page{
+.book_appointment_page {
   padding: 100px 0;
 }
 
 /* appointment form start */
-.book_appointment_page .book_appointment_form{
+.book_appointment_page .book_appointment_form {
   max-width: 1050px;
   margin: 0 auto;
   border: 2px solid var(--darkDividerColor);
@@ -3117,18 +3117,21 @@ textarea .form-control {
   padding: 40px;
 }
 
-.book_appointment_form .section_title{
+.book_appointment_form .section_row .section_title {
+  margin-bottom: 0;
+}
+.book_appointment_form .section_title {
   text-align: center;
 }
 
-.book_appointment_page .appointment_form{
+.book_appointment_page .appointment_form {
   width: 100%;
   max-width: 780px;
   margin: 0 auto;
   text-align: center;
 }
 
-.appointment_form .form-control{
+.appointment_form .form-control {
   padding: 15px 20px;
   background-color: transparent;
   border: 2px solid var(--darkDividerColor);
@@ -3136,11 +3139,52 @@ textarea .form-control {
   color: var(--textPrimary);
   box-shadow: none;
 }
-
 /* appointment form end */
-
-
-
 /* appointment page css end */
+
+/* 404 error page css start */
+.error_page {
+  padding: 100px 0;
+}
+
+.error_page_image {
+  text-align: center;
+  max-width: 680px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.error_page_image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.error_page .error_page_content {
+  text-align: center;
+}
+
+.error_page_content_heading {
+  margin-bottom: 30px;
+}
+
+.error_page_content_heading h2 {
+  color: var(--textPrimary);
+  font-size: 56px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.error_page_content_heading h2 span{
+  color: var(--textSecondary);
+}
+
+.error_page_content_body p {
+  font-size: 18px;
+  color: var(--textPrimary);
+  opacity: 0.7;
+  margin-bottom: 30px;
+}
+
+/* 404 error page css end */
 
 /* OTHERS PAGE CSS END */
