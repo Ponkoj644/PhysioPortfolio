@@ -1,11 +1,1294 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio || FAQ's</title>
+
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiperjs css cdn -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../assets/css/homeCss.css" />
+
+    <!-- home responsive css -->
+    <link rel="stylesheet" href="../assets/css/homeResponsiveCss.css" />
   </head>
   <body>
-    <h1>faqs page</h1>
+    <!-- header start -->
+    <header class="header_area">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg py-2 py-lg-4 shadow-sm my_navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/images/logo.svg" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav mx-auto mb-2 mb-lg-0 d-inline-flex align-items-center justify-content-between gap-2 gap-lg-5"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./aboutus.html">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="./single-service.html"
+                      >Service Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./blog.html">Blog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./single-blog.html"
+                      >Blog Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./therapist.html"
+                      >Our Therapist</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./single_therapist.html"
+                      >Therapist Details</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="./testimonial.html"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="./faq.html">FAQ's</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Book Appointment</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">404</a></li>
+
+                  <li><a class="dropdown-item" href="#">Testimonials</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="./contactus.html">Contact Us</a>
+              </li>
+            </ul>
+
+            <div class="d-none d-xl-block d-xl-block">
+              <a href="#" class="btn_default header_btn d-inline-flex"
+                >+(880) 1833-044436</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main>
+      <!-- page header start -->
+      <section class="page_header">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+              <!-- page header box start -->
+              <div class="page_header_box">
+                <h1>Frequently Asked Questions</h1>
+                <nav>
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="../index.html">home</a>
+                    </li>
+
+                    <li class="breadcrumb-item active" aria-current="page">
+                      Faqs
+                    </li>
+                  </ol>
+                </nav>
+              </div>
+              <!-- page header box end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- page header end -->
+
+      <!-- Faq page start -->
+      <section class="faqs_page">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <!-- faq sidebar start -->
+              <div class="faq_sidebar">
+                <div class="faq_category_list">
+                  <ul>
+                    <li><a href="#manual_therapy">manual therapy</a></li>
+                    <li><a href="#chronic_therapy">chronic pain</a></li>
+                    <li><a href="#hand_therapy">hand therapy</a></li>
+                    <li><a href="#sports_therapy">sports therapy</a></li>
+                    <li><a href="#cupping_therapy">cupping therapy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- faq sidebar end -->
+            </div>
+            <div class="col-lg-8">
+              <!-- manual therapy faq section start -->
+              <div class="faqs_section" id="manual_therapy">
+                <div class="faqs_section_title">
+                  <h2>Manual Therapy</h2>
+                </div>
+
+                <div class="faq-accordion" id="accordion">
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading1">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse1"
+                        aria-expanded="false"
+                        aria-controls="collapse1"
+                      >
+                        What is manual therapy?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse1"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading1"
+                      data-bs-parent="#accordion"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading2">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse2"
+                        aria-expanded="false"
+                        aria-controls="collapse2"
+                      >
+                        What conditions can manual therapy treat?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse2"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading2"
+                      data-bs-parent="#accordion"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading3">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse3"
+                        aria-expanded="false"
+                        aria-controls="collapse3"
+                      >
+                        Is manual therapy painful?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse3"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading3"
+                      data-bs-parent="#accordion"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading4">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse4"
+                        aria-expanded="false"
+                        aria-controls="collapse4"
+                      >
+                        Is manual therapy safe?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse4"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading4"
+                      data-bs-parent="#accordion"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div
+                    class="accordion-item wow fadeInUp"
+                    data-wow-delay="1s"
+                    style="
+                      visibility: visible;
+                      animation-delay: 1s;
+                      animation-name: fadeInUp;
+                    "
+                  >
+                    <h2 class="accordion-header" id="heading5">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse5"
+                        aria-expanded="false"
+                        aria-controls="collapse5"
+                      >
+                        Can manual therapy help with postural problems?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse5"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading5"
+                      data-bs-parent="#accordion"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+                </div>
+              </div>
+              <!-- manual therapy faq section end -->
+
+              <!-- chronic therapy faq section start -->
+              <div class="faqs_section" id="chronic_therapy">
+                <div class="faqs_section_title">
+                  <h2>chronic Therapy</h2>
+                </div>
+
+                <div class="faq-accordion" id="accordion1">
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading11">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse11"
+                        aria-expanded="false"
+                        aria-controls="collapse11"
+                      >
+                        What is Chronic therapy?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse11"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading11"
+                      data-bs-parent="#accordion1"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading12">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse12"
+                        aria-expanded="false"
+                        aria-controls="collapse12"
+                      >
+                        What conditions can chronic therapy treat?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse12"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading12"
+                      data-bs-parent="#accordion1"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading13">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse13"
+                        aria-expanded="false"
+                        aria-controls="collapse13"
+                      >
+                        Is Choronic therapy painful?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse13"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading13"
+                      data-bs-parent="#accordion1"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading14">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse14"
+                        aria-expanded="false"
+                        aria-controls="collapse14"
+                      >
+                        Is Chronic therapy safe?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse14"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading14"
+                      data-bs-parent="#accordion1"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading15">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse15"
+                        aria-expanded="false"
+                        aria-controls="collapse15"
+                      >
+                        Can chronic therapy help with postural problems?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse15"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading15"
+                      data-bs-parent="#accordion1"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+                </div>
+              </div>
+              <!-- chronic therapy faq section end -->
+
+              <!-- hand therapy faq section start -->
+              <div class="faqs_section" id="hand_therapy">
+                <div class="faqs_section_title">
+                  <h2>hand Therapy</h2>
+                </div>
+
+                <div class="faq-accordion" id="accordion2">
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading21">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse21"
+                        aria-expanded="true"
+                        aria-controls="collapse21"
+                      >
+                        What is Hand therapy?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse21"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading21"
+                      data-bs-parent="#accordion2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading22">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse22"
+                        aria-expanded="false"
+                        aria-controls="collapse22"
+                      >
+                        What conditions can hand therapy treat?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse22"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading22"
+                      data-bs-parent="#accordion2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading23">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse23"
+                        aria-expanded="false"
+                        aria-controls="collapse23"
+                      >
+                        Is hand therapy painful?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse23"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading23"
+                      data-bs-parent="#accordion2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading24">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse24"
+                        aria-expanded="false"
+                        aria-controls="collapse24"
+                      >
+                        Is hand therapy safe?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse24"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading24"
+                      data-bs-parent="#accordion2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading25">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse25"
+                        aria-expanded="false"
+                        aria-controls="collapse25"
+                      >
+                        Can hand therapy help with postural problems?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse25"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading25"
+                      data-bs-parent="#accordion2"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+                </div>
+              </div>
+              <!-- hand therapy faq section end -->
+
+              <!-- sports therapy faq section start -->
+              <div class="faqs_section" id="sports_therapy">
+                <div class="faqs_section_title">
+                  <h2>sport Therapy</h2>
+                </div>
+
+                <div class="faq-accordion" id="accordion3">
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading31">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse31"
+                        aria-expanded="true"
+                        aria-controls="collapse31"
+                      >
+                        What is sport therapy?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse31"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading31"
+                      data-bs-parent="#accordion3"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading32">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse32"
+                        aria-expanded="false"
+                        aria-controls="collapse32"
+                      >
+                        What conditions can sport therapy treat?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse32"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading32"
+                      data-bs-parent="#accordion3"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading33">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse33"
+                        aria-expanded="false"
+                        aria-controls="collapse33"
+                      >
+                        Is sport therapy painful?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse33"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading33"
+                      data-bs-parent="#accordion3"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading34">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse34"
+                        aria-expanded="false"
+                        aria-controls="collapse34"
+                      >
+                        Is sport therapy safe?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse34"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading34"
+                      data-bs-parent="#accordion3"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading35">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse35"
+                        aria-expanded="false"
+                        aria-controls="collapse35"
+                      >
+                        Can sport therapy help with postural problems?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse35"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading35"
+                      data-bs-parent="#accordion3"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+                </div>
+              </div>
+              <!-- sports therapy faq section end -->
+
+              <!-- sport therapy faq section start -->
+              <div class="faqs_section" id="cupping_therapy">
+                <div class="faqs_section_title">
+                  <h2>cupping Therapy</h2>
+                </div>
+
+                <div class="faq-accordion" id="accordion4">
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading41">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse41"
+                        aria-expanded="true"
+                        aria-controls="collapse41"
+                      >
+                        What is cupping therapy?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse41"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading41"
+                      data-bs-parent="#accordion4"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading42">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse42"
+                        aria-expanded="false"
+                        aria-controls="collapse42"
+                      >
+                        What conditions can cupping therapy treat?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse42"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading42"
+                      data-bs-parent="#accordion4"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading43">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse43"
+                        aria-expanded="false"
+                        aria-controls="collapse43"
+                      >
+                        Is cupping therapy painful?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse43"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading43"
+                      data-bs-parent="#accordion4"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading44">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse44"
+                        aria-expanded="false"
+                        aria-controls="collapse44"
+                      >
+                        Is cupping therapy safe?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse44"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading44"
+                      data-bs-parent="#accordion4"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+
+                  <!-- FAQ Item Start -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading45">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapse45"
+                        aria-expanded="false"
+                        aria-controls="collapse45"
+                      >
+                        Can sport therapy help with postural problems?
+                      </button>
+                    </h2>
+                    <div
+                      id="collapse45"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="heading45"
+                      data-bs-parent="#accordion4"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          Consectetur adipisicing elit, sed do eiusmod tempor
+                          incididunt ut labore et dolore of magna aliqua. Ut
+                          enim ad minim veniam, made of owl the quis nostrud
+                          exercitation ullamco laboris nisi ut aliquip ex ea
+                          dolor commodo consequat.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- FAQ Item End -->
+                </div>
+              </div>
+              <!-- hand therapy faq section end -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Faq page end -->
+
+      <!-- our scrolling ticker start -->
+      <section class="our_scrolling_ticker">
+        <!-- Scrolling Ticker Start -->
+        <div class="scrolling_ticker_box">
+          <div class="scrolling_content">
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />Emergency No. : (+880) 183 304 4436
+            </span>
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />For any additional inqueries : info@domainname.com</span
+            >
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />Book Appointment: (+880) 183 304 4436</span
+            >
+            <span
+              ><img
+                src="../assets/images/sparkles-icon.svg"
+                alt="Scroll Image"
+              />Working Hourse : Mon to Fri : 10:00 To 6:00
+            </span>
+          </div>
+
+          <div class="scrolling_content">
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />Emergency
+              No. : (+880) 183 304 4436</span
+            >
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />For any
+              additional inqueries : info@domainname.com</span
+            >
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />Book
+              Appointment: (+880) 183 304 4436</span
+            >
+            <span
+              ><img src="../assets/images/sparkles-icon.svg" alt="" />Working
+              Hourse : Mon to Fri : 10:00 To 6:00
+            </span>
+          </div>
+        </div>
+      </section>
+      <!-- our scrolling ticker end -->
+    </main>
+
+    <!-- footer start -->
+    <footer class="main_footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-3">
+            <!-- About Footer Start -->
+            <div class="about_footer">
+              <!-- Footer Logo Start -->
+              <div class="footer_logo">
+                <img src="../assets/images/footer-logo.svg" alt="" />
+              </div>
+              <!-- Footer Logo End -->
+
+              <!-- About Footer Content Start -->
+              <div class="about_footer_content">
+                <p>
+                  We understand that injuries and acute pain can happen
+                  unexpectedly. Our emergency physiotherapy.
+                </p>
+              </div>
+              <!-- Footer Social Links Start -->
+              <div class="footer_social_links">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Footer Social Links End -->
+            </div>
+            <!-- About Footer End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- About Links Start -->
+            <div class="about_working_hour">
+              <h3>working hours</h3>
+              <ul>
+                <li>sat to wed : 10:00 to 6:00</li>
+                <li>thu : 10:00AM to 3:00PM</li>
+                <li>fri : closed</li>
+              </ul>
+            </div>
+            <!-- About Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- About Links Start -->
+            <div class="about_service_list">
+              <h3>more services</h3>
+              <ul>
+                <li><a href="#">manual therapy</a></li>
+                <li><a href="#">chronic pain</a></li>
+                <li><a href="#">hand therapy</a></li>
+              </ul>
+            </div>
+            <!-- About Links End -->
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <!-- About Links Start -->
+            <div class="footer_contact">
+              <h3>contact</h3>
+              <!-- Footer Contact Details Start -->
+              <div class="footer_contact_details">
+                <!-- Footer Info Box Start -->
+                <div class="footer_info_box">
+                  <div class="icon-box">
+                    <img src="../assets/images/icon-phone.svg" alt="" />
+                  </div>
+                  <div class="footer_info_box_content">
+                    <p>(+880) 183 304 4436</p>
+                  </div>
+                </div>
+                <!-- Footer Info Box End -->
+
+                <!-- Footer Info Box Start -->
+                <div class="footer_info_box">
+                  <div class="icon-box">
+                    <img src="../assets/images/icon-mail.svg" alt="" />
+                  </div>
+                  <div class="footer_info_box_content">
+                    <p>example@gmail.com</p>
+                  </div>
+                </div>
+                <!-- Footer Info Box End -->
+
+                <!-- Footer Info Box Start -->
+                <div class="footer_info_box">
+                  <div class="icon-box">
+                    <img src="../assets/images/icon-location.svg" alt="" />
+                  </div>
+                  <div class="footer_info_box_content">
+                    <p>24/11 Road, City, Country</p>
+                  </div>
+                </div>
+                <!-- Footer Info Box End -->
+              </div>
+              <!-- Footer Contact Details End -->
+            </div>
+            <!-- About Links End -->
+          </div>
+        </div>
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer_copyright">
+          <div class="row align-items-center">
+            <div class="col-lg-6 col-md-6">
+              <!-- Footer Copyright Start -->
+              <div class="footer_copyright_text">
+                <p>Copyright 2025 Physiocare. All Rights Reserved.</p>
+              </div>
+              <!-- Footer Copyright End -->
+            </div>
+
+            <div class="col-lg-6 col-md-6">
+              <!-- Footer Social Link Start -->
+              <div class="footer_links">
+                <ul>
+                  <li><a href="./aboutus.html">about us</a></li>
+                  <li><a href="./services.html">services</a></li>
+                  <li><a href="./contactus.html">contact us</a></li>
+                </ul>
+              </div>
+              <!-- Footer Social Link End -->
+            </div>
+          </div>
+        </div>
+        <!-- Footer Copyright Section End -->
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- main end -->
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- swiperjs js -->
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+
+    <!-- Counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+
+    <!-- My script -->
+    <script src="../assets/js/function.js"></script>
   </body>
 </html>
