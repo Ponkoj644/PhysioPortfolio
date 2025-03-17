@@ -3100,15 +3100,47 @@ textarea .form-control {
   opacity: 0.7;
   margin: 0;
 }
-
-/* .faq-accordion .accordion-item h2{
-  color: var(--textPrimary);
-  font-size: 32px;
-  font-weight: 700;
-  margin: 0;
-} */
 /* faq accordion end */
-
 /* faq page css end */
+
+/* appointment page css start */
+.book_appointment_page{
+  padding: 100px 0;
+}
+
+/* appointment form start */
+.book_appointment_page .book_appointment_form{
+  max-width: 1050px;
+  margin: 0 auto;
+  border: 2px solid var(--darkDividerColor);
+  border-radius: 30px;
+  padding: 40px;
+}
+
+.book_appointment_form .section_title{
+  text-align: center;
+}
+
+.book_appointment_page .appointment_form{
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.appointment_form .form-control{
+  padding: 15px 20px;
+  background-color: transparent;
+  border: 2px solid var(--darkDividerColor);
+  border-radius: 10px;
+  color: var(--textPrimary);
+  box-shadow: none;
+}
+
+/* appointment form end */
+
+
+
+/* appointment page css end */
 
 /* OTHERS PAGE CSS END */

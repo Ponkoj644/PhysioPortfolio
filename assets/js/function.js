@@ -32,3 +32,59 @@ $(".counter").counterUp({
   delay: 50,
   time: 5000,
 });
+
+/* Appointment form validation */
+var $appointmentForm = $("#appointmentForm");
+$appointmentForm.validator({ focus: false }).on("submit", function (event) {
+  if (!event.isDefaultPrevented()) {
+    event.preventDefault();
+    submitappointmentForm();
+  }
+});
+
+function submitappointmentForm() {
+  /* Initiate Variables With Form Content*/
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var phone = $("#phone").val();
+  var phone = $("#services").val();
+  var date = $("#date").val();
+
+  $.ajax({
+    type: "POST",
+    url: "form-appointment.php",
+    data:
+      "name=" +
+      name +
+      "&email=" +
+      email +
+      "&phone=" +
+      phone +
+      "&services=" +
+      services +
+      "&date=" +
+      date,
+    success: function (text) {
+      if (text == "success") {
+        appointmentformSuccess();
+      } else {
+        appointmentsubmitMSG(false, text);
+      }
+    },
+  });
+}
+
+function appointmentformSuccess() {
+  $appointmentForm[0].reset();
+  appointmentsubmitMSG(true, "Message Sent Successfully!");
+}
+
+function appointmentsubmitMSG(valid, msg) {
+  if (valid) {
+    var msgClasses = "h3 text-success";
+  } else {
+    var msgClasses = "h3 text-danger";
+  }
+  $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+}
+/* Appointment form validation end */
