@@ -22,6 +22,8 @@
       crossorigin="anonymous"
     />
 
+    <!-- Dropdown animation cdn -->
+
     <!-- swiperjs css cdn -->
     <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 
@@ -80,7 +82,7 @@
                 >
                   Pages
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu ms-lg-0 ms-md-4 ms-sm-3 ms-2">
                   <li>
                     <a class="dropdown-item" href="./pages/single-service.html"
                       >Service Details</a
@@ -161,8 +163,12 @@
                   </p>
                 </div>
                 <div class="hero_btn">
-                  <a class="btn_default" href="">Explore Services</a>
-                  <a class="btn_default btn_highlighted" href=""
+                  <a class="btn_default" href="./pages/services.html"
+                    >Explore Services</a
+                  >
+                  <a
+                    class="btn_default btn_highlighted"
+                    href="./pages/appointment.html"
                     >Book Appointment</a
                   >
                 </div>
@@ -383,7 +389,9 @@
 
                   <!-- Appointment Button Start -->
                   <div class="appointment_btn">
-                    <a href="#" class="btn_default">Make an appointment</a>
+                    <a href="./pages/appointment.html" class="btn_default"
+                      >Make an appointment</a
+                    >
                   </div>
                   <!-- Appointment Button End -->
                 </div>
@@ -545,7 +553,9 @@
             </div>
             <div class="col-lg-5">
               <div class="section_btn">
-                <a href="#" class="btn_default">view all services</a>
+                <a href="./pages/services.html" class="btn_default"
+                  >view all services</a
+                >
               </div>
             </div>
           </div>
@@ -728,7 +738,9 @@
 
                 <!-- Service Footer Start -->
                 <div class="service-cta-btn">
-                  <a href="#" class="btn_default">Book Appointment</a>
+                  <a href="./pages/appointment.html" class="btn_default"
+                    >Book Appointment</a
+                  >
                 </div>
                 <!-- Service Footer End -->
               </div>
@@ -1032,7 +1044,7 @@
               <div class="need_attention_list">
                 <!-- Icon Box Start -->
                 <div class="icon_box">
-                  <img src="/assets/images/need-attention-bg.jpg" alt="" />
+                  <img src="/assets/images/icon-need-attention-1.svg" alt="" />
                 </div>
                 <!-- Icon Box End -->
 
@@ -1223,7 +1235,9 @@
             <div class="col-lg-3">
               <!-- Section Button Start -->
               <div class="section_btn">
-                <a href="#" class="btn_default">view all team</a>
+                <a href="./pages/therapist.html" class="btn_default"
+                  >view all team</a
+                >
               </div>
               <!-- Section Button End -->
             </div>
@@ -1672,7 +1686,9 @@
             <div class="col-lg-3">
               <!-- Section Button Start -->
               <div class="section_btn">
-                <a href="#" class="btn_default">view all blog</a>
+                <a href="./pages/blog.html" class="btn_default"
+                  >view all blog</a
+                >
               </div>
               <!-- Section Button End -->
             </div>
@@ -1905,9 +1921,9 @@
             <div class="about_service_list">
               <h3>more services</h3>
               <ul>
-                <li><a href="#">manual therapy</a></li>
-                <li><a href="#">chronic pain</a></li>
-                <li><a href="#">hand therapy</a></li>
+                <li><a href="./pages/single-service.html">manual therapy</a></li>
+                <li><a href="./pages/single-service.html">chronic pain</a></li>
+                <li><a href="./pages/single-service.html#">hand therapy</a></li>
               </ul>
             </div>
             <!-- About Links End -->
@@ -1988,6 +2004,43 @@
     <!-- footer end -->
     <!-- main end -->
 
+    <!-- Back to top button start -->
+    <button
+      onclick="topFunction()"
+      id="back_to_top"
+      class="back_to_top"
+      title="Go to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("back_to_top");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 250 ||
+          document.documentElement.scrollTop > 250
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Back to top button end -->
+
     <!-- bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -2002,6 +2055,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
+
+    <!-- back to top button -->
 
     <!-- My script -->
     <script src="./assets/js/function.js"></script>

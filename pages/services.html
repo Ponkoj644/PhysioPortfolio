@@ -116,7 +116,6 @@
                   <li><a class="dropdown-item" href="./404.html">404</a></li>
 
                   <li><hr class="dropdown-divider" /></li>
-                  
                 </ul>
               </li>
 
@@ -1000,6 +999,43 @@
     </footer>
     <!-- footer end -->
     <!-- main end -->
+
+    <!-- Back to top button start -->
+    <button
+      onclick="topFunction()"
+      id="back_to_top"
+      class="back_to_top"
+      title="Go to top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Get the button
+      let mybutton = document.getElementById("back_to_top");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 250 ||
+          document.documentElement.scrollTop > 250
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!-- Back to top button end -->
 
     <!-- bootstrap js -->
     <script
